@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <title>Agri-Ket</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+
+<!--Translater.....😁-->
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const targetNode = document.body;
+        const observerConfig = { childList: true, subtree: true };
+
+        const observerCallback = function(mutationsList, observer) {
+            for (const mutation of mutationsList) {
+                if (mutation.type === 'childList') {
+                    const translateElement = document.getElementById('google_translate_element');
+                    if (!translateElement) {
+                        googleTranslateElementInit();
+                    }
+                }
+            }
+        };
+
+        const observer = new MutationObserver(observerCallback);
+        observer.observe(targetNode, observerConfig);
+    });
+</script>
+
+
+
+
+
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <div class="hero_bg_box">
+      <div class="img-box">
+        <img src="wall1.png" alt="">
+      </div>
+    </div>
+
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_link-container">
+            
+            </a>
+            <a href="" class="contact_link2">
+              
+            <a href="" class="contact_link3">
+             
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                AGRI-KET
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""></span>
+            </button>
+
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" id="sellDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Maintenance
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="sellDropdown">
+                    <a class="dropdown-item" href="maintain.html">Hen</a>
+                    <a class="dropdown-item" href="cowmaintain.html">Cow\Buffalo</a>
+                    <a class="dropdown-item" href="horsemaintain.html">Horse</a>
+                    <a class="dropdown-item" href="goatmaintain.html">Goat</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="doctor.html">Doctors</a>
+                </li>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" id="sellDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Selling
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="sellDropdown">
+                    <a class="dropdown-item" href="cwselling.html">Cow</a>
+                    <a class="dropdown-item" href="bsell.html">Buffalo</a>
+                    <a class="dropdown-item" href="hsell.html">Horse</a>
+                    <a class="dropdown-item" href="gsell.html">Goat</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="sellDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Buying
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="sellDropdown">
+                    <a class="dropdown-item" href="cwdisplay.php">Cow</a>
+                    <a class="dropdown-item" href="bdisplay.php">Buffalo</a>
+                    <a class="dropdown-item" href="hdisplay.php">Horse</a>
+                    <a class="dropdown-item" href="gdisplay.php">Goat</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="auction.html"> Auction </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Logout</a>
+                </li>
+               
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <center>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                margin: 0;
+                padding: 0;
+            }
+            .table-container {
+                width: 70%;
+                margin: 30px auto;
+                border: 1px solid #ccc;
+                border-collapse: collapse;
+                background-color: #fff;
+            }
+            .table-container th,
+            .table-container td {
+                border: 1px solid #ccc;
+                padding: 10px;
+                text-align: left;
+            }
+            .table-container th {
+                background-color: #f0f0f0;
+                font-weight: bold;
+            }
+            .table-container tbody tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+        </style>
+    </head>
+    <body>
+        <br><br><center>
+        <header>
+            <h1 style="color: white;">Livestock Maintanace</h1><BR>
+            <h1><a href="maintain.html" style="text-decoration: none;">HEN &emsp;<a href="cowmaintain.html" style="text-decoration: none;">COW/BUFFALO</a>&emsp;<a href="goatmaintain.html" style="text-decoration: none;">GOAT
+            </a>&emsp;<a href="horsemaintain.html" style="text-decoration: none;">HORSE</a></h1>
+        </header><br>
+        <h1 style="color: white;">Raising Hens - Seasonal Guide</h1>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: rgb(30, 30, 30);
+                margin: 0;
+                padding: 20px;
+            }
+            .table-container {
+                display: none; /* Hidden by default, will be shown by JavaScript */
+               
+                border-collapse: collapse;
+                width: 70%;
+                margin: 20px 0;
+                background-color: #fff;
+            }
+            .table-container th,
+            .table-container td {
+                border: 1px solid #ccc;
+                padding: 10px;
+                text-align: left;
+            }
+            .table-container th {
+                background-color: #f0f0f0;
+                font-weight: bold;
+            }
+            .table-container tbody tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .season-selector {
+                margin-bottom: 20px;
+            }
+            .season-selector select {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+        <script>
+            function showTable() {
+                // Hide all tables first
+                var tables = document.querySelectorAll('.table-container');
+                tables.forEach(function(table) {
+                    table.style.display = 'none';
+                });
+    
+                // Get the selected season from the dropdown list
+                var season = document.getElementById('season-select').value;
+    
+                // Show the corresponding table
+                var tableToShow = document.getElementById(season + '-table');
+                if (tableToShow) {
+                    tableToShow.style.display = 'block';
+                }
+            }
+        </script>
+    </head>
+    <body>
+       
+        <div class="season-selector">
+            <label for="season-select">Select Season:</label>
+            <select id="season-select" onchange="showTable()">
+                <option value="">-- Select --</option> <!-- Default empty option -->
+                <option value="summer">Summer</option>
+                <option value="rainy">Rainy</option>
+            </select>
+        </div>
+    
+        <!-- Table for Summer Season -->
+        <div id="summer-table" class="table-container">
+            <h2>Summer Season - Raising Hens</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Age</th>
+                        <th>Maintenance</th>
+                        <th>Vaccination</th>
+                        <th>Disease Risks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>0-7 days</td>
+                        <td>
+                            - Keep brooder at 32-35°C to ensure warmth.<br>
+                            - Provide a clean, dry environment.<br>
+                            - Change bedding regularly.
+                        </td>
+                        <td>Marek's Disease</td>
+                        <td>
+                            - Marek's Disease<br>
+                            - Salmonellosis<br>
+                            - Fowl Pox
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>7-14 days</td>
+                        <td>
+                            - Reduce brooder temperature to 29-32°C.<br>
+                            - Monitor chicks for stress.<br>
+                            - Provide clean water and high-quality starter feed.
+                        </td>
+                        <td>Infectious Bursal Disease (IBD)</td>
+                        <td>
+                            - Infectious Bursal Disease<br>
+                            - Newcastle Disease
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>14-21 days</td>
+                        <td>
+                            - Keep brooder temperature at 26-29°C.<br>
+                            - Ensure proper ventilation.<br>
+                            - Avoid overcrowding.
+                        </td>
+                        <td>Newcastle Disease</td>
+                        <td>
+                            - Coccidiosis<br>
+                            - Infectious Coryza<br>
+                            - Infectious Bronchitis
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>21-28 days</td>
+                        <td>
+                            - Reduce brooder temperature to 24-26°C.<br>
+                            - Introduce perches and light stimulation.<br>
+                            - Provide grit for digestion.
+                        </td>
+                        <td>Infectious Bronchitis</td>
+                        <td>
+                            - Infectious Coryza<br>
+                            - Fowl Pox<br>
+                            - Mycoplasmosis
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>28-35 days</td>
+                        <td>
+                            - Maintain ventilation.<br>
+                            - Provide additional space as chicks grow.<br>
+                            - Monitor for heat stress.
+                        </td>
+                        <td>Fowl Pox</td>
+                        <td>
+                            - Fowl Cholera<br>
+                            - Avian Encephalomyelitis
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>35-42 days</td>
+                        <td>
+                            - Transition to grower feed.<br>
+                            - Ensure proper ventilation.<br>
+                            - Avoid overcrowding.
+                        </td>
+                        <td>Newcastle Disease</td>
+                        <td>
+                            - Newcastle Disease<br>
+                            - Fowl Pox<br>
+                            - Mycoplasmosis
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>42-49 days</td>
+                        <td>
+                            - Transition chicks to adult coop.<br>
+                            - Provide more space and nesting areas.<br>
+                            - Ensure proper waste disposal.
+                        </td>
+                        <td>Avian Encephalomyelitis</td>
+                        <td>
+                            - Avian Encephalomyelitis<br>
+                            - Pullorum<br>
+                            - Infectious Laryngotracheitis
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>49-56 days</td>
+                        <td>
+                            - Continue providing grower feed.<br>
+                            - Ensure adequate space.<br>
+                            - Monitor for signs of heat stress.
+                        </td>
+                        <td>Infectious Coryza</td>
+                        <td>
+                            - Infectious Coryza<br>
+                            - Avian Influenza
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>56-63 days</td>
+                        <td>
+                            - Provide additional enrichment activities.<br>
+                            - Encourage natural behaviors.<br>
+                            - Monitor for respiratory illness.
+                        </td>
+                        <td>Pullorum</td>
+                        <td>
+                            - Pullorum<br>
+                            - Coccidiosis<br>
+                            - Mycoplasmosis
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>63-70 days</td>
+                        <td>
+                            - Increase space for growing hens.<br>
+                            - Continue grower feed.<br>
+                            - Monitor for signs of stress.
+                        </td>
+                        <td>Coccidiosis</td>
+                        <td>
+                            - Coccidiosis<br>
+                            - Salmonellosis<br>
+                            - Infectious Coryza
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>70-77 days</td>
+                        <td>
+                            - Transition to layer feed if appropriate.<br>
+                            - Maintain proper sanitation.<br>
+                            - Ensure proper ventilation without drafts.
+                        </td>
+                        <td>Avian Influenza</td>
+                        <td>
+                            - Avian Influenza<br>
+                            - Infectious Bronchitis
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>77-84 days</td>
+                        <td>
+                            - Ensure proper coop sanitation.<br>
+                            - Monitor for signs of heat stress.<br>
+                            - Provide proper ventilation without drafts.
+                        </td>
+                        <td>Mycoplasmosis</td>
+                        <td>
+                            - Mycoplasmosis<br>
+                            - Infectious Coryza<br>
+                            - Avian Influenza
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <!-- Table for Rainy Season -->
+        <div id="rainy-table" class="table-container">
+            <h2>Rainy Season - Raising Hens</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Age</th>
+                        <th>Maintenance</th>
+                        <th>Vaccination</th>
+                        <th>Disease Risks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>0-7 days</td>
+                        <td>
+                            - Keep brooder at 32-35°C.<br>
+                            - Avoid drafts and dampness.<br>
+                            - Provide clean bedding to maintain a dry environment.
+                        </td>
+                        <td>Marek's Disease</td>
+                        <td>
+                            - Marek's Disease<br>
+                            - Salmonellosis<br>
+                            - Fowl Pox
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>7-14 days</td>
+                        <td>
+                            - Maintain brooder temperature at 29-32°C.<br>
+                            - Check for moisture and dampness.<br>
+                            - Change bedding regularly.
+                        </td>
+                        <td>Infectious Bursal Disease (IBD)</td>
+                        <td>
+                            - Infectious Bursal Disease<br>
+                            - Infectious Bronchitis
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>14-21 days</td>
+                        <td>
+                            - Ensure proper ventilation.<br>
+                            - Provide grit for digestion.<br>
+                            - Increase coop space to avoid overcrowding.
+                        </td>
+                        <td>Newcastle Disease</td>
+                        <td>
+                            - Infectious Coryza<br>
+                            - Coccidiosis<br>
+                            - Mycoplasmosis
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>21-28 days</td>
+                        <td>
+                            - Maintain proper ventilation.<br>
+                            - Introduce perches and light stimulation.<br>
+                            - Avoid dampness in the coop.
+                        </td>
+                        <td>Fowl Pox</td>
+                        <td>
+                            - Fowl Pox<br>
+                            - Newcastle Disease<br>
+                            - Pullorum
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>28-35 days</td>
+                        <td>
+                            - Transition to grower feed.<br>
+                            - Ensure proper ventilation.<br>
+                            - Monitor for signs of illness.
+                        </td>
+                        <td>Fowl Pox</td>
+                        <td>
+                            - Fowl Pox<br>
+                            - Infectious Coryza<br>
+                            - Fowl Cholera
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>35-42 days</td>
+                        <td>
+                            - Ensure proper ventilation.<br>
+                            - Maintain cleanliness to avoid mold.<br>
+                            - Monitor for respiratory illness.
+                        </td>
+                        <td>Newcastle Disease</td>
+                        <td>
+                            - Infectious Coryza<br>
+                            - Newcastle Disease<br>
+                            - Mycoplasmosis
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>42-49 days</td>
+                        <td>
+                            - Transition chicks to adult coop.<br>
+                            - Ensure proper sanitation.<br>
+                            - Provide enough nesting areas and perches.
+                        </td>
+                        <td>Avian Encephalomyelitis</td>
+                        <td>
+                            - Avian Encephalomyelitis<br>
+                            - Fowl Cholera<br>
+                            - Mycoplasmosis
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>49-56 days</td>
+                        <td>
+                            - Continue providing grower feed.<br>
+                            - Avoid dampness in the coop and bedding.<br>
+                            - Ensure proper ventilation without drafts.
+                        </td>
+                        <td>Infectious Coryza</td>
+                        <td>
+                            - Infectious Coryza<br>
+                            - Avian Influenza<br>
+                            - Salmonellosis
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>56-63 days</td>
+                        <td>
+                            - Provide proper ventilation.<br>
+                            - Avoid overcrowding.<br>
+                            - Monitor for respiratory illness.
+                        </td>
+                        <td>Pullorum</td>
+                        <td>
+                            - Pullorum<br>
+                            - Infectious Laryngotracheitis<br>
+                            - Mycoplasmosis
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>63-70 days</td>
+                        <td>
+                            - Increase space for growing hens.<br>
+                            - Continue providing grower feed.<br>
+                            - Avoid dampness in the coop.
+                        </td>
+                        <td>Coccidiosis</td>
+                        <td>
+                            - Coccidiosis<br>
+                            - Salmonellosis<br>
+                            - Fowl Cholera
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>70-77 days</td>
+                        <td>
+                            - Transition to layer feed if appropriate.<br>
+                            - Maintain proper sanitation.<br>
+                            - Ensure proper ventilation.
+                        </td>
+                        <td>Avian Influenza</td>
+                        <td>
+                            - Avian Influenza<br>
+                            - Infectious Bronchitis<br>
+                            - Fowl Cholera
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>77-84 days</td>
+                        <td>
+                            - Maintain proper coop sanitation.<br>
+                            - Provide additional bedding if necessary.<br>
+                            - Monitor for signs of illness.
+                        </td>
+                        <td>Mycoplasmosis</td>
+                        <td>
+                            - Mycoplasmosis<br>
+                            - Coccidiosis<br>
+                            - Avian Influenza
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <h1 style="color: #fff;">Choose Language</h1>
+        <div id="google_translate_element"></div>
+
+
+
+    </center>
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

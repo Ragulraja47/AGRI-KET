@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Example</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Three items in a row */
+      grid-template-rows: repeat(2, 1fr); /* Two items in a column */
+      gap: 10px;
+      max-width: 600px; /* Increased maximum width */
+      margin: 0 auto;
+    }
+    .grid-item {
+      background-color: #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+    .grid-item img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+    .button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+        <button class="button">Button</button>
+      </div>
+      <div class="grid-item">
+        <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+        <button class="button">Button</button>
+      </div>
+      <div class="grid-item">
+        <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+        <button class="button">Button</button>
+      </div>
+      <div class="grid-item">
+        <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+        <button class="button">Button</button>
+      </div>
+      <div class="grid-item">
+        <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+        <button class="button">Button</button>
+      </div>
+      <div class="grid-item">
+        <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+        <button class="button">Button</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

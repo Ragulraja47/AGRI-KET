@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox to center children */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.bg {
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  background-image: url('land.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex; /* Use flexbox inside .bg as well */
+  justify-content: center; /* Center horizontally inside .bg */
+  align-items: center; /* Center vertically inside .bg */
+}
+
+.login-container {
+  width: 100%; /* Full width of .bg */
+  max-width: 400px; /* Maximum width of the form */
+  /* Rest of your styles */
+}
+
+
+
+
+  .login-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(12, 12, 12, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .login-container h2 {
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+  }
+
+  .login-container input[type="text"]:focus,
+  .login-container input[type="password"]:focus {
+    background-color: #eaeaea;
+  }
+
+  .login-container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .login-container input[type="submit"]:hover {
+    background-color: #4CAF50;
+  }
+</style>
+</head>
+<body>
+  <div class="bg">
+<div class="login-container">
+  <h2>Login</h2>
+  <form action="login.php" method ="post">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="submit" value="Login">
+    <h5>Don't have an account? <a href="signup.html">SIGN-UP</a></h5>
+  </form>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url('land.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .btn-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+
+  button {
+  width: 120px; /* Reduced button size */
+  padding: 8px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f2f2f2; /* Light grey background */
+  color: #333; /* Dark grey text */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button:hover {
+  background-color: #4CAF50; /* Green background on hover */
+  color: #fff; /* White text on hover */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Shadow for depth */
+}
+
+</style>
+</head>
+<body>
+
+<div class="bg">
+  <div class="btn-container">
+    <center><h1 style="color: white;">AGRI-KET</h1></center>
+    <Center><p ><h4 style="color: white; font-size: 25px;" >Manage your livestocks with Agri-ket, Join now</h4></p></Center>
+    <!-- The buttons for login and signup -->
+    <button onclick="location.href='login.html'">Login</button>
+    <button onclick="location.href='signup.html'">Signup</button>
+  </div>
+</div>
+
+</body>
+</html>

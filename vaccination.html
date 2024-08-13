@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Vaccination Table</title>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%; /* Adjust as needed */
+  margin: 20px auto; /* Center the container and add space on top and bottom */
+  padding: 20px; /* Add space on both sides of the table */
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333; /* Title color */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #f3e8fd, #a56cf7); /* Gradient background */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #a56cf7;
+  color: #fff;
+  font-weight: bold;
+}
+
+td {
+  background-color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0; /* Alternate row background color */
+}
+
+tr:hover {
+  background-color: #e0e0e0; /* Hover row background color */
+}
+
+/* Hover effect for table cells */
+td:hover {
+  background-color: #d6d6d6;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Style for the table header */
+thead {
+  border-bottom: 2px solid #a56cf7; /* Header border color */
+}
+
+/* Style for the table footer */
+tfoot {
+  border-top: 2px solid #a56cf7; /* Footer border color */
+}
+
+/* Style for the caption */
+caption {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #a56cf7; /* Caption color */
+}
+
+  </style>
+</head>
+<body>
+
+  <h2>Animal Vaccination Table</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Animals</th>
+        <th>Vaccination Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Cattle</td>
+        <td>
+          <ul>
+            <li>Clostridial Diseases:
+
+                Calves: Initial dose at 2-4 months, booster 4-6 weeks later.
+                Annual boosters.
+                </li>
+            <li>Respiratory Diseases:
+
+                IBR, BVD, PI3, BRSV: Initial dose at 2-4 months, booster 4-6 weeks later.
+                Annual boosters.
+                </li>
+            <li>Leptospirosis:
+
+                Annual vaccination, especially in areas with a history of leptospirosis.
+                </li>
+            <li>Brucellosis:
+
+                Often done at a specific age, depending on local regulations.
+                </li>
+            <li>Parasite Control:
+
+                Regular deworming based on herd health and environmental factors.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Dog</td>
+        <td>
+          <ul>
+            <li>Bordetella (Kennel Cough):
+
+                Frequency depends on risk, often annually.
+                
+                </li>
+            <li>Leptospirosis:
+
+                Initial series, then annual boosters.
+                </li>
+            <li>Lyme Disease:
+
+                Dependent on geographic risk, may be annual </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Goats</td>
+        <td>
+          <ul>
+            <li> 
+                Tetanus (CD/T):
+                
+                Kids: Initial dose at 8 weeks, booster 4 weeks later.
+                Adults: Annual booster.
+                </li>
+            <li>Overeating Disease (CD):
+
+                Kids: Initial dose at 8 weeks, booster 4 weeks later.
+                Adults: Annual booster.
+                </li>
+            <li>Caseous Lymphadenitis (CL):
+
+                Depending on the risk in the area, vaccination may be considered.</li>
+            <li>Caprine Arthritis Encephalitis (CAE):
+
+                Consider testing and vaccination if needed.
+                </li>
+            <li>Enterotoxemia (Type C and D):
+
+                Kids: Initial dose at 8 weeks, booster 4 weeks later.
+                Adults: Annual booster.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Horses</td>
+        <td>
+          <ul>
+            <li> Tetanus:
+
+                Foals: Initial dose at 6-8 weeks, booster 4-6 weeks later.
+                Adults: Boost every 10 years.
+                </li>
+            <li>Eastern and Western Equine Encephalomyelitis (EEE/WEE):
+
+                Foals: Initial dose at 4-6 months, booster 4-6 weeks later.
+                Adults: Annual booster.</li>
+            <li>Rabies:
+
+                Initial dose at 4-6 months, booster 1 year later, then every 1-3 years depending on local regulations.
+                </li>
+            <li>West Nile Virus (WNV):
+
+                Foals: Initial dose at 4-6 months, booster 4-6 weeks later.
+                Adults: Annual booster.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Cats</td>
+        <td>
+          <ul>
+            <li>Rabies: Initial dose at 12-16 weeks, booster 1 year later, then as per local regulations.
+            </li>
+            <li>FVRCP: Start at 6-8 weeks, boost every 3-4 weeks until 16 weeks, then every 3 years.
+            </li>
+            <li>FeLV: Consider based on risk. Start at 8-12 weeks, booster after 3-4 weeks, then as needed.
+                Regular vet check-ups for a tailored plan</li>
+          </ul>
+        </td>
+      </tr>
+      <!-- Add more rows for other animals as needed -->
+    </tbody>
+  </table>
+
+</body>
+</html>
